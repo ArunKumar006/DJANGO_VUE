@@ -13,17 +13,17 @@ const router = createRouter({
       component: AllPostsView,
     },
     {
-      path: "/author",
+      path: "/author/:username",
       name: "author",
       component: AuthorView,
     },
     {
-      path: "/post",
+      path: "/post/:slug",
       name: "post",
       component: PostView,
     },
     {
-      path: "/tag",
+      path: "/tag/:tag",
       name: "tag",
       component: PostsByTagView,
     },
